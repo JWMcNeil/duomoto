@@ -1,0 +1,15 @@
+---
+import PostCard from './PostCard.astro';
+import PostGrid from './PostGrid.astro';
+
+
+---
+<section class="m-5">
+    <div class="flex flex-col items-center gap-4">
+        <h3 class="font-poppins text-xl underline">Latest Posts</h3>
+        <PostGrid>
+            <PostCard  />
+        </PostGrid>
+    </div>
+
+</section>

@@ -1,0 +1,16 @@
+---
+import Navbar from './Navbar.astro';
+import MenuButton from './UI_components/MenuButton.astro';
+---
+
+<header>
+    <nav class="pl-5 pr-5 flex mx-auto pt-6 justify-between">
+        <a href="/" class="font-jetbrains text-3xl text-white"><span class="text-brandOrange">Duo</span>Moto</a>
+        <Navbar />
+        <MenuButton />
+    </nav>
+</header>
+
+<script>
+   	import '../scripts/menu.js';		
+</script>

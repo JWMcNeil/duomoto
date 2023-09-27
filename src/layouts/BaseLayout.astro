@@ -1,0 +1,19 @@
+---
+
+import Header from "../components/Header.astro";
+import MainHead from "../components/MainHead.astro";
+const  {pageTitle} = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<MainHead />
+		<title>{pageTitle}</title>
+	</head>
+	<body class="bg-night text-white">
+        <Header/>
+		<main>
+			<slot />
+		</main>
+		
+</html>
